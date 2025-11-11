@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Vigilia",
+    "day": "Lunes",
+    "hour": "8:00 PM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ayuno",
+    "day": "Viernes",
+    "hour": "10:00 AM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Culto Dominical",
+    "day": "Domingo",
+    "hour": "9:00 AM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Culto de Jovenes",
+    "day": "Sabado",
+    "hour": "6:30 PM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bachiller",
+    "day": "Miercoles",
+    "hour": "6:00 PM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Club biblico",
+    "day": "Jueves",
+    "hour": "7:00 PM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Culto de oracion",
+    "day": "Martes",
+    "hour": "8:00 PM",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eosnihil expedita id vitae reprehenderit.",
+    "thumbail": "http://localhost:5173/pic1.jpg"
+  }
+]
