@@ -17,7 +17,7 @@ function Presentation() {
           </h1>
           <div className="divider "></div>
           <p className="">
-            para que si tardo, sepan como debes conducirse en la casa de Dios,
+            para que si tardo, sepas como debes conducirse en la casa de Dios,
             que es la iglesia del Dios viviente, <strong>columna</strong> y
             baluarte <strong>de la verdad</strong>.
           </p>

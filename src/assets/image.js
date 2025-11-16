@@ -8,5 +8,7 @@ export const logo3_blue =
   "https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/logo3_blue.webp";
 export const logoSinFondo =
   "https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/logoSinFondo.webp";
-export const temple =
-  "https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/temple.webp";
+export const temploPic1 =
+  "https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/temploPic1.jpg";
+export const temploPic2 =
+  "https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/temploPic2.png";

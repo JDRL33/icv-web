@@ -10,11 +10,11 @@ function Welcome() {
         momento, queremos que sepas algo muy simple: eres bienvenido/a aquí.
         <br />
         <br />
-        Al dar este paso de fé, quiero que sepas que no estás solo. Has llegado
-        a una familia donde encontrarás amor, apoyo y un lugar para crecer. Al
-        igual que un recién nacido necesita cuidado, nosotros estamos aquí para
-        apoyarte en tu nueva vida en Cristo. Juntos aprenderemos, serviremos y
-        creceremos en el conocimiento de Su palabra.
+        Al dar este paso de fé, has llegado a una familia donde encontrarás
+        amor, apoyo y un lugar para crecer. Al igual que un recién nacido
+        necesita cuidado, nosotros estamos aquí para apoyarte en tu nueva vida
+        en Cristo. Juntos aprenderemos, serviremos y creceremos en el
+        conocimiento de Su palabra.
         <br />
         <br />
         Tu viaje recién comienza, y es la aventura más hermosa que podrás

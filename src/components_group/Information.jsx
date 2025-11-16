@@ -1,4 +1,4 @@
-import { temple } from "../assets/image";
+import { temploPic1, temploPic2 } from "../assets/image";
 
 export function Vision() {
   return (
@@ -16,7 +16,7 @@ export function Vision() {
       </div>
       <img
         className="aspect-16/11 object-cover rounded outline-2 outline-offset-2 outline-dashed"
-        src={temple}
+        src={temploPic1}
         alt="picture"
       />
     </div>
@@ -24,12 +24,7 @@ export function Vision() {
 }
 export function Mision() {
   return (
-    <div id="mision" className="flex flex-col md:flex-row items-center gap-8">
-      <img
-        className="aspect-16/11 object-cover rounded outline-2 outline-offset-2 outline-dashed"
-        src={temple}
-        alt="picture"
-      />
+    <div id="vision" className="flex flex-col md:flex-row items-center gap-8">
       <div>
         <h2 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
           Misión
@@ -40,6 +35,11 @@ export function Mision() {
           }
         </p>
       </div>
+      <img
+        className="aspect-16/11 object-cover rounded outline-2 outline-offset-2 outline-dashed"
+        src={temploPic2}
+        alt="picture"
+      />
     </div>
   );
 }

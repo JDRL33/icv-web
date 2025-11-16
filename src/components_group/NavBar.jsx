@@ -42,15 +42,15 @@ function NavBar() {
             <li>
               <a href="#vp">Valores Personales</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#ads">Eventos de la Semana</a>
-            </li>
+            </li> */}
             <li>
               <a href="#address">Encontremonos</a>
             </li>
-            <li>
+            {/* <li>
               <a>Donaciones</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <a className="cursor-pointer text-2xl text-nowrap font-bold">
@@ -91,12 +91,12 @@ function NavBar() {
               </ul>
             </details>
           </li>
-          <li>
+          {/* <li>
             <a href="#ads">Eventos de la Semana</a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a>Donaciones</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

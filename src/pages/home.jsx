@@ -30,8 +30,8 @@ function Home() {
         <ValoresPersonales />
       </div>
       <Bg_mask_y>
-        <AdsOfTheWeekend />
-        <div className="mb-30"></div>
+        {/* <AdsOfTheWeekend />
+        <div className="mb-30"></div> */}
         <Address />
       </Bg_mask_y>
       <Footer />
