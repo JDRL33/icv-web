@@ -1,12 +1,10 @@
-import { logoSinFondo } from "../assets/image";
-
 function Presentation() {
   return (
     <div id="start">
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
         <img
           className="max-h-70 w-100 "
-          src={logoSinFondo}
+          src="images/logo-ui.jpg"
           alt="Columna de la Verdad Cojimar"
         />
         <div>

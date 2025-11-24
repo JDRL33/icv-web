@@ -1,12 +1,10 @@
-import { logoSinFondo } from "../assets/image";
-
 function Footer() {
   return (
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
       <aside className="flex flex-col items-center">
         <a href="#home">
           <img
-            src={logoSinFondo}
+            src="images/logo-ui.jpg"
             alt="Columna de la Verdad Cojimar"
             className="h-30"
           />
