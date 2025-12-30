@@ -1,12 +1,17 @@
 import { temploPic1, temploPic2 } from "../assets/image";
+import { useScrollStore } from "../store/RoutesStore";
 
 export function Vision() {
+  const sectionRefs = useScrollStore((state) => state.sectionRefs);
   return (
-    <div id="vision" className="flex flex-col md:flex-row items-center gap-8">
+    <div
+      ref={sectionRefs["vision"]}
+      className="flex flex-col md:flex-row items-center gap-8"
+    >
       <div>
-        <h2 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
+        <h3 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
           Visión
-        </h2>
+        </h3>
         <p className="text-justify">
           <strong>Su mandato es nuestra misión</strong>
           {
@@ -23,12 +28,16 @@ export function Vision() {
   );
 }
 export function Mision() {
+  const sectionRefs = useScrollStore((state) => state.sectionRefs);
   return (
-    <div id="vision" className="flex flex-col md:flex-row items-center gap-8">
+    <div
+      ref={sectionRefs["mision"]}
+      className="flex flex-col md:flex-row items-center gap-8"
+    >
       <div>
-        <h2 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
+        <h3 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
           Misión
-        </h2>
+        </h3>
         <p className="text-justify">
           {
             " Ante los grandes desafíos que nos propone nuestra generación, es necesario entender que sólo serán superados utilizando los recursos que nos dejo nuestro Señor Jesucristo, la iglesia cristiana en Cojímar los asumirá con la siempre viviente Palabra de Dios, el Poder del Espíritu Santo y la diligente dedicación a la enseñanza efectiva de las Verdades Eternas de Dios."
@@ -44,11 +53,12 @@ export function Mision() {
   );
 }
 export function ValoresPersonales() {
+  const sectionRefs = useScrollStore((state) => state.sectionRefs);
   return (
-    <div id="vp">
-      <h2 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
+    <div ref={sectionRefs["vp"]}>
+      <h3 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
         Valores personales de nuestra iglesia.
-      </h2>
+      </h3>
       <div className="mx-8">
         <p className="flex flex-col gap-4 text-left">
           <span>
@@ -105,11 +115,12 @@ export function ValoresPersonales() {
   );
 }
 export function ValoresDoctrinales() {
+  const sectionRefs = useScrollStore((state) => state.sectionRefs);
   return (
-    <div id="vd">
-      <h2 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
+    <div ref={sectionRefs["vd"]}>
+      <h3 className=" text-6xl md:text-7xl mb-10 ml-0 md:ml-10 text-center md:text-left ">
         Valores doctrinales de nuestra iglesia.
-      </h2>
+      </h3>
       <div className="flex flex-col md:flex-row gap-5 md:gap-10 mx-8">
         <p className="text-left flex flex-col">
           <span>

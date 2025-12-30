@@ -1,4 +1,8 @@
+import { useScrollStore } from "../store/RoutesStore";
+
 function NavBar() {
+  const scrollTo = useScrollStore((store) => store.scrollTo);
+
   return (
     <div className="navbar text-white">
       <div className="navbar-start">
@@ -28,34 +32,46 @@ function NavBar() {
             className="menu menu-sm dropdown-content bg-white text-black rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="#start">Somos ...</a>
+              <button onClick={() => scrollTo("somos", { offset: 20 })}>
+                Somos ...
+              </button>
             </li>
             <li>
-              <a href="#vision">Visión</a>
+              <button onClick={() => scrollTo("vision", { offset: 20 })}>
+                Visión
+              </button>
             </li>
             <li>
-              <a href="#mision">Misión</a>
+              <button onClick={() => scrollTo("mision", { offset: 20 })}>
+                Misión
+              </button>
             </li>
             <li>
-              <a href="#vd">Valores Doctrinales</a>
+              <button onClick={() => scrollTo("vd", { offset: 20 })}>
+                Valores Doctrinales
+              </button>
             </li>
             <li>
-              <a href="#vp">Valores Personales</a>
+              <button onClick={() => scrollTo("vp", { offset: 20 })}>
+                Valores Personales
+              </button>
             </li>
             {/* <li>
               <a href="#ads">Eventos de la Semana</a>
             </li> */}
             <li>
-              <a href="#address">Encontremonos</a>
+              <button onClick={() => scrollTo("address", { offset: 20 })}>
+                Encontremonos
+              </button>
             </li>
             {/* <li>
               <a>Donaciones</a>
             </li> */}
           </ul>
         </div>
-        <a className="cursor-pointer text-2xl text-nowrap font-bold">
-          Columna de la verdad
-        </a>
+        <h1 className="cursor-pointer text-2xl text-nowrap font-bold">
+          Iglesia Columna de la verdad
+        </h1>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -64,32 +80,52 @@ function NavBar() {
               <summary>¿Quienes Somos?</summary>
               <ul className="p-2 w-40 flex flex-col items-center bg-white text-black">
                 <li>
-                  <a href="#start" className="min-w-36 flex justify-center">
+                  <button
+                    onClick={() => scrollTo("somos", { offset: 20 })}
+                    className="min-w-36 flex justify-center"
+                  >
                     Somos ...
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#vision" className="min-w-36 flex justify-center">
+                  <button
+                    onClick={() => scrollTo("vision", { offset: 20 })}
+                    className="min-w-36 flex justify-center"
+                  >
                     Visión
-                  </a>
+                  </button>
                 </li>
-                <li className="">
-                  <a href="#mision" className="min-w-36 flex justify-center">
+                <li>
+                  <button
+                    onClick={() => scrollTo("mision", { offset: 20 })}
+                    className="min-w-36 flex justify-center"
+                  >
                     Misión
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#vd" className="min-w-36 flex justify-center">
+                  <button
+                    onClick={() => scrollTo("vd", { offset: 20 })}
+                    className="min-w-36 flex justify-center"
+                  >
                     Valores Doctrinales
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#vp" className="min-w-36 flex justify-center">
+                  <button
+                    onClick={() => scrollTo("vp", { offset: 20 })}
+                    className="min-w-36 flex justify-center"
+                  >
                     Valores Personales
-                  </a>
+                  </button>
                 </li>
               </ul>
             </details>
+          </li>
+          <li>
+            <button onClick={() => scrollTo("address", { offset: 20 })}>
+              Encuentrenos
+            </button>
           </li>
           {/* <li>
             <a href="#ads">Eventos de la Semana</a>

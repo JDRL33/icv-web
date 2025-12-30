@@ -1,18 +1,21 @@
+import { useScrollStore } from "../store/RoutesStore";
+
 function Address() {
+  const sectionRefs = useScrollStore((state) => state.sectionRefs);
   return (
-    <div id="address">
-      <h2 className="mx-5 text-white text-5xl md:text-7xl text-center mb-20">
+    <div ref={sectionRefs["address"]}>
+      <h4 className="mx-5 text-white text-5xl md:text-7xl text-center mb-20">
         ¿Donde encontrarnos?
-      </h2>
+      </h4>
       <div className="flex flex-col md:flex-row items-center justify-center gap-20 px-6">
         <div>
-          <h2 className="font-bold text-white text-3xl mb-6">
+          <h4 className="font-bold text-white text-3xl mb-6">
             Iglesia
             <br />
             <span className="text-white text-3xl md:text-5xl">
               Columna de la Verdad
             </span>
-          </h2>
+          </h4>
           <p className="text-white text-xl">
             Calle 80 #8208 % Calle J y Calle I Cojimar
             <br />

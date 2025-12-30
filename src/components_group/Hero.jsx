@@ -1,18 +1,25 @@
+import { useScrollStore } from "../store/RoutesStore";
 import NavBar from "./NavBar";
-// import { icv, logo3_blue } from "../assets/image";
 
 function Hero() {
+  const scrollTo = useScrollStore((store) => store.scrollTo);
+  const sectionRefs = useScrollStore((store) => store.sectionRefs);
+
   return (
     <>
       <div
         className={`flex flex-col justify-between min-h-150
        mask-alpha mask-b-from-50% mask-b-to-60%-70% bg-[url(https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/icv.webp)]
        md:bg-[url(https://nafhiyrnophnkpixobey.supabase.co/storage/v1/object/public/images/logo3_blue.webp)] bg-cover bg-no-repeat bg-center`}
+       ref={sectionRefs["start"]}
       >
         <NavBar />
       </div>
       <section className="flex justify-center -mt-20">
-        <a href="#welcome" className=" cursor-pointer z-10">
+        <button
+          onClick={() => scrollTo("welcome", { offset: 20 })}
+          className=" cursor-pointer z-10"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -25,7 +32,7 @@ function Hero() {
               clipRule="evenodd"
             />
           </svg>
-        </a>
+        </button>
       </section>
     </>
   );

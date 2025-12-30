@@ -11,13 +11,34 @@ import {
   ValoresPersonales,
 } from "../components_group/Information";
 import Welcome from "../components_group/Welcome";
-import SeoHead from "../components/SeoHead";
+import { useEffect, useRef } from "react";
+import { useScrollStore } from "../store/RoutesStore";
 
 function Home() {
+  const registerRef = useScrollStore((store) => store.registerRef);
+
+  const start = useRef(null);
+  const welcome = useRef(null);
+  const somos = useRef(null);
+  const vision = useRef(null);
+  const mision = useRef(null);
+  const vp = useRef(null);
+  const vd = useRef(null);
+  const address = useRef(null);
+
+  useEffect(() => {
+    registerRef("start", start);
+    registerRef("welcome", welcome);
+    registerRef("somos", somos);
+    registerRef("vision", vision);
+    registerRef("mision", mision);
+    registerRef("vp", vp);
+    registerRef("vd", vd);
+    registerRef("address", address);
+  }, [registerRef]);
+
   return (
     <>
-      <SeoHead />
-
       <div id="home" style={{ overflow: "hidden" }}>
         <Hero />
         <div className=" mt-40 px-10">

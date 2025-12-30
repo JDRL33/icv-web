@@ -21,12 +21,12 @@ export default function AdsOfTheWeekend() {
 
   return (
     <div>
-      <h2
+      <h4
         id="ads"
         className="mx-10 text-white text-6xl md:text-7xl text-center mb-20"
       >
         Eventos de la Semana
-      </h2>
+      </h4>
       <div className="flex gap-8 p-5" style={{ overflow: "scroll" }}>
         {ads.map((adss) => (
           <section

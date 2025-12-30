@@ -1,47 +1,66 @@
+import { useScrollStore } from "../store/RoutesStore";
+
 function Footer() {
+  const scrollTo = useScrollStore((state) => state.scrollTo);
   return (
     <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
       <aside className="flex flex-col items-center">
-        <a href="#home">
+        <button onClick={() => scrollTo("start", { offset: 20 })}>
           <img
-            src="images/logo-ui.jpg"
+            src="images/logo_ui.jpg"
             alt="Columna de la Verdad Cojimar"
             className="h-30"
           />
-        </a>
+        </button>
         <>
           Iglesia Evangelica Pentecostal.
           <br />
           Asambleas de Dios de Cuba.
           <br />
-          <span className="text-xs">
-            Derechos Reservados @columnadelaverdad 2025
-          </span>
+          <span className="text-xs">columnadelaverdad@2025</span>
         </>
       </aside>
       <nav>
         <h6 className="footer-title">¿Quienes Somos?</h6>
-        <a className="link link-hover" href="#start">
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("somos", { offset: 20 })}
+        >
           Somos ...
-        </a>
-        <a className="link link-hover" href="#vision">
+        </button>
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("vision", { offset: 20 })}
+        >
           Visión
-        </a>
-        <a className="link link-hover" href="#mision">
+        </button>
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("mision", { offset: 20 })}
+        >
           Misión
-        </a>
-        <a className="link link-hover" href="#vd">
+        </button>
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("vd", { offset: 20 })}
+        >
           Valores Doctrinales
-        </a>
-        <a className="link link-hover" href="#vp">
+        </button>
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("vp", { offset: 20 })}
+        >
           Valores Personales
-        </a>
+        </button>
       </nav>
       <nav>
-        <h6 className="footer-title">Comunicación</h6>
-        <a className="link link-hover" href="#address">
-          Encuentrenos
-        </a>
+        <h6 className="footer-title">Contacto</h6>
+        <button
+          className="link link-hover"
+          onClick={() => scrollTo("address", { offset: 20 })}
+        >
+          Dirección
+        </button>
         {/* <a className="link link-hover">Contacto</a>
         <a className="link link-hover">Escribenos</a> */}
       </nav>

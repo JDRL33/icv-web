@@ -1,9 +1,17 @@
+import { useScrollStore } from "../store/RoutesStore";
+
 function Welcome() {
+  const sectionRefs = useScrollStore((store) => store.sectionRefs);
+
   return (
-    <div id="welcome" className="bg-[#E0D4B5] rounded-4xl p-10 pt-3">
-      <h2 className="text-4xl sm:text-5xl md:text-7xl text-[#4D4D4D] text-center mb-7">
+    <div
+      ref={sectionRefs["welcome"]}
+      className="bg-[#E0D4B5] rounded-4xl p-10 pt-3"
+    >
+      <h3 className="text-4xl sm:text-5xl md:text-7xl text-[#4D4D4D] text-center mb-7">
         Bienvenido
-      </h2>
+      </h3>
+
       <section className="mb-5 h-0.5 bg-[#4D4D4D]"></section>
       <p className="text-[#4D4D4D] text-justify">
         Sin importar de dónde vengas, qué hayas hecho o en qué creas en este
